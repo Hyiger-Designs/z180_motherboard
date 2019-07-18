@@ -584,7 +584,7 @@ Wire Wire Line
 Wire Wire Line
 	8845 1305 8845 1080
 $Comp
-L sbc_z80-rescue:TPS7A0533PDBVR-Regulator_Linear U7
+L z180_motherboard-rescue:TPS7A0533PDBVR-Regulator_Linear-sbc_z80-rescue U7
 U 1 1 5D35A913
 P 1980 1045
 F 0 "U7" H 1980 1387 50  0000 C CNN
@@ -756,17 +756,11 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9145 108
 	1    0    0    -1  
 $EndComp
 Text HLabel 9445 1080 2    50   Output ~ 0
-CLK_100Mhz
+CLK_50Mhz
 Text HLabel 9440 1925 2    50   Output ~ 0
 CLK_7_3728_Mhz
 Text HLabel 9440 1505 2    50   Output ~ 0
 CLK_10_Mhz
-Wire Bus Line
-	3595 3415 3595 4690
-Wire Bus Line
-	4225 3580 4225 4640
-Wire Bus Line
-	5945 3580 5945 4640
 Wire Wire Line
 	2635 3330 2635 3285
 Wire Wire Line
@@ -1040,7 +1034,7 @@ F 3 "https://ams.com/documents/20143/36005/AS1115_DS000206_1-00.pdf/3d3e6d35-b18
 	1    0    0    -1  
 $EndComp
 $Comp
-L sbc_z80-rescue:ACDA02-41SGWA-F01-Display_Character U?
+L z180_motherboard-rescue:ACDA02-41SGWA-F01-Display_Character-sbc_z80-rescue U?
 U 1 1 5F4897F6
 P 5085 4185
 AR Path="/5F4897F6" Ref="U?"  Part="1" 
@@ -1053,4 +1047,10 @@ F 3 "https://www.mouser.com/datasheet/2/216/ACDA02-41SGWA-F01-42033.pdf" H 4830 
 	1    5085 4185
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	5945 3580 5945 4640
+Wire Bus Line
+	4225 3580 4225 4640
+Wire Bus Line
+	3595 3415 3595 4690
 $EndSCHEMATC
